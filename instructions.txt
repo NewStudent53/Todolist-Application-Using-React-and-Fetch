@@ -1,0 +1,8 @@
+cd todos-api
+===>node index.js
+
+*API listening at http://localhost:4000
+
+===>npm run start
+
+***realizar run start en rama de proyecto
