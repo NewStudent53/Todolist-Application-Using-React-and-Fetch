@@ -1,11 +1,111 @@
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+/* Estilo general para el contenedor */
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  /* Estilo del encabezado */
+  .Home h1 {
+    font-size: 5em; 
+    font-weight: 300;
+    color: #c1bdbd;
+    margin-bottom: 20px; 
+  }
+  
+  /* Estilo del input y los botones */
+  .input-group {
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  button:hover {
+    background-color: #e55a5a;
+  }
+  
+  button:active {
+    background-color: #cc4e4e;
+  }
+  
+  /* Estilo del contenedor de error */
+  .error {
+    color: red;
+    margin: 10px 0;
+  }
+  
+  /* Estilo de la lista */
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo de los elementos de la lista */
+  li {
+    padding: 10px;
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  li .btn-danger {
+    display: none;
+    position: absolute;
+    right: 10px;
+  }
+  
+  li:hover .btn-danger {
+    display: inline-block;
+  }
+  
+  span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  span:hover {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  /* Estilo del texto de elementos restantes */
+  .mt-3 span {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
